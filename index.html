@@ -43,6 +43,42 @@
       line-height: 1.6;
       color: #555;
     }
+    .section-header {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: #222;
+    }
+    .symptom-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .symptom-name {
+      font-size: 1rem;
+      color: #333;
+    }
+    .rating-group {
+      display: flex;
+      gap: 8px;
+    }
+    .rating-group label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #888;
+      cursor: pointer;
+    }
+    .rating-group input[type="radio"] {
+      margin-bottom: 2px;
+    }
   </style>
 </head>
 <body>
@@ -51,8 +87,217 @@
     <span class="site-name">My Site</span>
   </header>
   <main>
-    <h1>Welcome</h1>
-    <p>This site now features a flower logo.</p>
+    <h1>Symptom Questionnaire</h1>
+
+    <h2 class="section-header">Upper Digestive</h2>
+    <div class="symptom-card">
+      <span class="symptom-name">Nausea</span>
+      <div class="rating-group">
+        <label><input type="radio" name="nausea" value="0"> 0</label>
+        <label><input type="radio" name="nausea" value="1"> 1</label>
+        <label><input type="radio" name="nausea" value="2"> 2</label>
+        <label><input type="radio" name="nausea" value="3"> 3</label>
+        <label><input type="radio" name="nausea" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Belching</span>
+      <div class="rating-group">
+        <label><input type="radio" name="belching" value="0"> 0</label>
+        <label><input type="radio" name="belching" value="1"> 1</label>
+        <label><input type="radio" name="belching" value="2"> 2</label>
+        <label><input type="radio" name="belching" value="3"> 3</label>
+        <label><input type="radio" name="belching" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Bloating</span>
+      <div class="rating-group">
+        <label><input type="radio" name="bloating" value="0"> 0</label>
+        <label><input type="radio" name="bloating" value="1"> 1</label>
+        <label><input type="radio" name="bloating" value="2"> 2</label>
+        <label><input type="radio" name="bloating" value="3"> 3</label>
+        <label><input type="radio" name="bloating" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Heartburn</span>
+      <div class="rating-group">
+        <label><input type="radio" name="heartburn" value="0"> 0</label>
+        <label><input type="radio" name="heartburn" value="1"> 1</label>
+        <label><input type="radio" name="heartburn" value="2"> 2</label>
+        <label><input type="radio" name="heartburn" value="3"> 3</label>
+        <label><input type="radio" name="heartburn" value="4"> 4</label>
+      </div>
+    </div>
+
+    <h2 class="section-header">Sleep Quality</h2>
+    <div class="symptom-card">
+      <span class="symptom-name">Difficulty falling asleep</span>
+      <div class="rating-group">
+        <label><input type="radio" name="falling-asleep" value="0"> 0</label>
+        <label><input type="radio" name="falling-asleep" value="1"> 1</label>
+        <label><input type="radio" name="falling-asleep" value="2"> 2</label>
+        <label><input type="radio" name="falling-asleep" value="3"> 3</label>
+        <label><input type="radio" name="falling-asleep" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Waking during the night</span>
+      <div class="rating-group">
+        <label><input type="radio" name="waking-night" value="0"> 0</label>
+        <label><input type="radio" name="waking-night" value="1"> 1</label>
+        <label><input type="radio" name="waking-night" value="2"> 2</label>
+        <label><input type="radio" name="waking-night" value="3"> 3</label>
+        <label><input type="radio" name="waking-night" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Feeling unrested</span>
+      <div class="rating-group">
+        <label><input type="radio" name="unrested" value="0"> 0</label>
+        <label><input type="radio" name="unrested" value="1"> 1</label>
+        <label><input type="radio" name="unrested" value="2"> 2</label>
+        <label><input type="radio" name="unrested" value="3"> 3</label>
+        <label><input type="radio" name="unrested" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Excessive sleepiness</span>
+      <div class="rating-group">
+        <label><input type="radio" name="sleepiness" value="0"> 0</label>
+        <label><input type="radio" name="sleepiness" value="1"> 1</label>
+        <label><input type="radio" name="sleepiness" value="2"> 2</label>
+        <label><input type="radio" name="sleepiness" value="3"> 3</label>
+        <label><input type="radio" name="sleepiness" value="4"> 4</label>
+      </div>
+    </div>
+
+    <h2 class="section-header">Mood & Emotional</h2>
+    <div class="symptom-card">
+      <span class="symptom-name">Anxiety</span>
+      <div class="rating-group">
+        <label><input type="radio" name="anxiety" value="0"> 0</label>
+        <label><input type="radio" name="anxiety" value="1"> 1</label>
+        <label><input type="radio" name="anxiety" value="2"> 2</label>
+        <label><input type="radio" name="anxiety" value="3"> 3</label>
+        <label><input type="radio" name="anxiety" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Depression</span>
+      <div class="rating-group">
+        <label><input type="radio" name="depression" value="0"> 0</label>
+        <label><input type="radio" name="depression" value="1"> 1</label>
+        <label><input type="radio" name="depression" value="2"> 2</label>
+        <label><input type="radio" name="depression" value="3"> 3</label>
+        <label><input type="radio" name="depression" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Irritability</span>
+      <div class="rating-group">
+        <label><input type="radio" name="irritability" value="0"> 0</label>
+        <label><input type="radio" name="irritability" value="1"> 1</label>
+        <label><input type="radio" name="irritability" value="2"> 2</label>
+        <label><input type="radio" name="irritability" value="3"> 3</label>
+        <label><input type="radio" name="irritability" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Mood swings</span>
+      <div class="rating-group">
+        <label><input type="radio" name="mood-swings" value="0"> 0</label>
+        <label><input type="radio" name="mood-swings" value="1"> 1</label>
+        <label><input type="radio" name="mood-swings" value="2"> 2</label>
+        <label><input type="radio" name="mood-swings" value="3"> 3</label>
+        <label><input type="radio" name="mood-swings" value="4"> 4</label>
+      </div>
+    </div>
+
+    <h2 class="section-header">Brain & Cognitive</h2>
+    <div class="symptom-card">
+      <span class="symptom-name">Brain fog</span>
+      <div class="rating-group">
+        <label><input type="radio" name="brain-fog" value="0"> 0</label>
+        <label><input type="radio" name="brain-fog" value="1"> 1</label>
+        <label><input type="radio" name="brain-fog" value="2"> 2</label>
+        <label><input type="radio" name="brain-fog" value="3"> 3</label>
+        <label><input type="radio" name="brain-fog" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Poor concentration</span>
+      <div class="rating-group">
+        <label><input type="radio" name="concentration" value="0"> 0</label>
+        <label><input type="radio" name="concentration" value="1"> 1</label>
+        <label><input type="radio" name="concentration" value="2"> 2</label>
+        <label><input type="radio" name="concentration" value="3"> 3</label>
+        <label><input type="radio" name="concentration" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Memory issues</span>
+      <div class="rating-group">
+        <label><input type="radio" name="memory" value="0"> 0</label>
+        <label><input type="radio" name="memory" value="1"> 1</label>
+        <label><input type="radio" name="memory" value="2"> 2</label>
+        <label><input type="radio" name="memory" value="3"> 3</label>
+        <label><input type="radio" name="memory" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Difficulty with decisions</span>
+      <div class="rating-group">
+        <label><input type="radio" name="decisions" value="0"> 0</label>
+        <label><input type="radio" name="decisions" value="1"> 1</label>
+        <label><input type="radio" name="decisions" value="2"> 2</label>
+        <label><input type="radio" name="decisions" value="3"> 3</label>
+        <label><input type="radio" name="decisions" value="4"> 4</label>
+      </div>
+    </div>
+
+    <h2 class="section-header">Energy & Stamina</h2>
+    <div class="symptom-card">
+      <span class="symptom-name">Fatigue</span>
+      <div class="rating-group">
+        <label><input type="radio" name="fatigue" value="0"> 0</label>
+        <label><input type="radio" name="fatigue" value="1"> 1</label>
+        <label><input type="radio" name="fatigue" value="2"> 2</label>
+        <label><input type="radio" name="fatigue" value="3"> 3</label>
+        <label><input type="radio" name="fatigue" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Low stamina</span>
+      <div class="rating-group">
+        <label><input type="radio" name="stamina" value="0"> 0</label>
+        <label><input type="radio" name="stamina" value="1"> 1</label>
+        <label><input type="radio" name="stamina" value="2"> 2</label>
+        <label><input type="radio" name="stamina" value="3"> 3</label>
+        <label><input type="radio" name="stamina" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Afternoon energy crash</span>
+      <div class="rating-group">
+        <label><input type="radio" name="afternoon-crash" value="0"> 0</label>
+        <label><input type="radio" name="afternoon-crash" value="1"> 1</label>
+        <label><input type="radio" name="afternoon-crash" value="2"> 2</label>
+        <label><input type="radio" name="afternoon-crash" value="3"> 3</label>
+        <label><input type="radio" name="afternoon-crash" value="4"> 4</label>
+      </div>
+    </div>
+    <div class="symptom-card">
+      <span class="symptom-name">Exercise intolerance</span>
+      <div class="rating-group">
+        <label><input type="radio" name="exercise-intolerance" value="0"> 0</label>
+        <label><input type="radio" name="exercise-intolerance" value="1"> 1</label>
+        <label><input type="radio" name="exercise-intolerance" value="2"> 2</label>
+        <label><input type="radio" name="exercise-intolerance" value="3"> 3</label>
+        <label><input type="radio" name="exercise-intolerance" value="4"> 4</label>
+      </div>
+    </div>
   </main>
 </body>
 </html>
