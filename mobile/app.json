@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "BarberJohn22",
+    "slug": "barberjohn22",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.barberjohn22.app"
+    },
+    "android": {
+      "package": "com.barberjohn22.app"
+    }
+  }
+}
