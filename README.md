@@ -1,37 +1,35 @@
-# BarberJohn22 Mobile App (Expo / React Native)
+# BarberJohn22 Full App (iOS + Android + API)
 
-Cross-platform iOS + Android app scaffold for booking, Instagram reel discovery, reminders, and loyalty gamification.
+This repository now contains:
+- `mobile/` Expo React Native customer app
+- `backend/` Express API for booking, loyalty, reels feed, and reminder scheduling scaffold
 
-## Implemented in this scaffold
+## Features implemented
+- Fade/cut catalog
+- Appointment booking through API
+- Loyalty points/tier tracking
+- Push confirmation notification
+- 30-day reminder scheduler (server cron scaffold)
+- Instagram reel links/feed endpoint
+- Google Calendar sync endpoint scaffold
 
-- Service catalog for all requested fade/cut types.
-- In-app booking form.
-- Push notification confirmation and 30-day rebook reminder scheduling.
-- Loyalty engine baseline (points + tiers).
-- Instagram reel/profile entry points.
-
-## Run locally
-
+## Run backend
 ```bash
+cd backend
+npm install
+npm run dev
+```
+
+## Run mobile
+```bash
+cd mobile
 npm install
 npm run start
 ```
 
-## Production integrations to complete
-
-1. **Google Calendar two-way sync**
-   - Backend endpoint for OAuth and token refresh.
-   - Create/update/delete calendar events on booking changes.
-   - Pull busy slots from Google Calendar to block app availability.
-
-2. **Instagram reel ingestion**
-   - Use Instagram Graph API with a Business/Creator account.
-   - Cache reel metadata server-side and serve to app.
-
-3. **Backend services**
-   - Appointments service (CRUD + reminders + anti-double-booking).
-   - Loyalty ledger service (events, balances, tier promotions).
-   - Notification orchestration (24h, 2h, 30-day cadence).
-
-4. **Operational hardening**
-   - Auth, payments/deposits, cancellation policy, analytics, admin dashboard.
+## Production completion checklist
+1. Replace in-memory arrays with PostgreSQL.
+2. Implement Google OAuth token storage + Calendar API read/write.
+3. Integrate Instagram Graph API for real reel ingestion.
+4. Add auth, payments/deposits, and admin dashboard.
+5. Configure push pipelines: APNs/FCM + job queue.
